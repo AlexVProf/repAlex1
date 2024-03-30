@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Кнопка и поле ввода</title>
+</head>
+
+<div style="text-align: center; background-color: khaki; width: 500px; height: 40px">
+      <h1>ЭКЗАМЕНАЦИОННАЯ ЗАДАЧА</h1><br>
+</div>
+
+<br><input placeholder="Поле ввода"> <button id="btn">Создать новую кнопку с полем ввода</button><br>
+
+<script>
+    btn.onclick = () => {
+        btn.insertAdjacentHTML('beforeend', '<br><input placeholder="Поле ввода"><button>Кнопка</button>')
+    }
+</script>
+
+</html>
