@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+    body {
+        background-image: url("{% static 'my_page.jpg' %}");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: grey;
+        height: 30vh;
+        width: 70vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    h1 {
+        color: crimson; /* Устанавливаем цвет текста */
+        text-shadow: 2px 2px cadetblue; /* Добавляем кайму цвета cadetblue */
+        margin-top: 5%;
+        text-align: center;
+    }
+    
+    h2 {
+        color: cadetblue; /* Устанавливаем цвет текста */
+        text-shadow: 2px 2px black; /* Добавляем кайму чёрного цвета  */
+        margin-bottom: 10%;
+        text-align: left;
+    }    
+    
+    .btn {
+        margin-top: 10px; /* Отступ сверху */
+        margin-bottom: 10px; /* Отступ снизу */
+        box-shadow: 0px 0px 0px 3px white, 0px 7px 15px rgba(0,0,0,1); /* Белая кайма и тень */
+    }
+    
+</style>
+</head>
+<body>
+
+<div class="profile-container">
+    <h1>Вы попали на страницу своего профиля!</h1>
+    <h2>Привет, {{ login }}</h2>
+
+    <form action="" method="post">
+        <button class="btn btn-info logout-btn">Выйти из профиля</button>
+        
+    </form>
+</div>
+
+</body>
+</html>
