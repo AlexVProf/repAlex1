@@ -1,1 +1,1 @@
-print("для загрузкив PyCharm") 
+print("для загрузки в PyCharm") 
